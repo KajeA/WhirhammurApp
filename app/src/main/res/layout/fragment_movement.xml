@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A63CC"
+    tools:context=".MovementFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screenBackground"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title_movement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/title_movement"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/details_movement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/details_movement"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title_fallback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="23dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/title_fallback"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:typeface="serif"
+            app:layout_constraintBottom_toTopOf="@+id/details_fallback"
+            app:layout_constraintTop_toBottomOf="@+id/details_movement"
+            tools:layout_editor_absoluteX="131dp" />
+
+        <TextView
+            android:id="@+id/details_fallback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/details_fallback"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_fallback" />
+
+        <TextView
+            android:id="@+id/details_terrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/details_terrain"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.548"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="730dp" />
+
+        <TextView
+            android:id="@+id/details_flying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/details_flying"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.187"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="854dp" />
+
+        <Button
+            android:id="@+id/goto_reinforcement_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="956dp"
+            android:text="@string/goto_reinforcements_button_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.536"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

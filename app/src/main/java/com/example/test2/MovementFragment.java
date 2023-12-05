@@ -10,10 +10,11 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.test2.databinding.FragmentBattleShockBinding;
+import com.example.test2.databinding.FragmentMovementBinding;
 
-public class BattleShockFragment extends Fragment {
+public class MovementFragment extends Fragment {
 
-    private FragmentBattleShockBinding binding;
+    private FragmentMovementBinding binding;
 
     @Override
     public View onCreateView(
@@ -21,7 +22,7 @@ public class BattleShockFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentBattleShockBinding.inflate(inflater, container, false);
+        binding = FragmentMovementBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -29,11 +30,11 @@ public class BattleShockFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.bs_goto_movement_button).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.goto_reinforcements_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(BattleShockFragment.this)
-                        .navigate(R.id.action_BattleShockFragment_to_MovementFragment);
+                NavHostFragment.findNavController(MovementFragment.this)
+                        .navigate(R.id.action_MovementFragment_to_ReinforcementsFragment);
             }
         });
     }

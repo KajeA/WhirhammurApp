@@ -19,7 +19,46 @@
         No - proceed to MOVEMENT \n
         Yes - continue to test \n
     </string>
+    <!-- TODO: tooltip for Attached Units -->
     <string name="test_battleshock_button_text">Test BATTLESHOCK</string>
     <string name="goto_movement_button_text">Go To MOVEMENT</string>
     <!-- TODO: have a faction selection on startup to create additional rules -->
+
+    <!-- Battleshock Fragment -->
+    <string name="details_battleshock2">
+        - Roll 2D6 \n
+        - If result is greater than or equal to the highest Leadership in unit - PASS \n
+        - If Failed - Unit is BATTLE SHOCKED \n
+    </string>
+    <string name="details_battleshock3">
+        - Objective Control characteristic of all models is 0 \n
+        - Falling back requires a Desperate Escape test for each model \n
+        - Unaffected by player's stratagems \n
+    </string>
+    <!-- TODO: have a separate Desperate Escape text view and use here and in movement -->
+
+    <!-- Movement Fragment -->
+    <string name="title_movement">3. Movement</string>
+    <string name="details_movement">
+        - Move units - if within Engagement Range (ER) you must fall back or not move \n
+        - Models can move over friendly units unless the are Monsters or Vehicles \n
+        Normal Move = Up to M", not into ER \n
+        Advance Move = Up to M+D6", not into ER, cannot shoot or charge \n
+    </string>
+    <!-- TODO: make tool tip for engagement range -->
+    <string name="title_fallback">Fall Back</string>
+    <string name="details_fallback">
+        - Models can move up to M" and cannot shoot or charge \n
+        - Must make Desperate Escape to move over enemies (unless TITANIC or FLY) \n
+    </string>
+    <string name="details_terrain">
+        Terrain \n
+        Can move freely over features 2" or less, otherwise have to climb
+    </string>
+    <string name="details_flying">
+        Flying \n
+        Can move over enemy models
+        Measure path through air
+    </string>
+    <string name="goto_reinforcements_button_text">Go To REINFORCEMENTS</string>
 </resources>
