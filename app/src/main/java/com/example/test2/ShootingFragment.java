@@ -9,11 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.test2.databinding.FragmentMovementBinding;
+import com.example.test2.databinding.FragmentShootingBinding;
 
-public class MovementFragment extends Fragment {
+public class ShootingFragment extends Fragment {
 
-    private FragmentMovementBinding binding;
+    private FragmentShootingBinding binding;
 
     @Override
     public View onCreateView(
@@ -21,7 +21,7 @@ public class MovementFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentMovementBinding.inflate(inflater, container, false);
+        binding = FragmentShootingBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -29,11 +29,11 @@ public class MovementFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.goto_shooting_button).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.goto_attack_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(MovementFragment.this)
-                        .navigate(R.id.action_MovementFragment_to_ShootingFragment);
+                NavHostFragment.findNavController(ShootingFragment.this)
+                        .navigate(R.id.action_ShootingFragment_to_AttackFragment);
             }
         });
     }

@@ -6,4 +6,6 @@
     <item name="action_BattleShockFragment_to_MovementFragment" type="id" />
     <item name="goto_reinforcements_button" type="id" />
     <item name="action_MovementFragment_to_ReinforcementsFragment" type="id" />
+    <item name="action_MovementFragment_to_ShootingFragment" type="id" />
+    <item name="action_ShootingFragment_to_AttackFragment" type="id" />
 </resources>

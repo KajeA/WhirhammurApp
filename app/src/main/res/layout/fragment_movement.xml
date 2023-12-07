@@ -83,6 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="13dp"
+            android:layout_marginTop="34dp"
             android:layout_marginEnd="3dp"
             android:background="@color/colorPrimaryDark"
             android:text="@string/details_terrain"
@@ -90,15 +91,16 @@
             android:textSize="24sp"
             android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.548"
+            app:layout_constraintHorizontal_bias="0.75"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="730dp" />
+            app:layout_constraintTop_toBottomOf="@+id/details_fallback" />
 
         <TextView
             android:id="@+id/details_flying"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="13dp"
+            android:layout_marginTop="28dp"
             android:layout_marginEnd="3dp"
             android:background="@color/colorPrimaryDark"
             android:text="@string/details_flying"
@@ -106,20 +108,37 @@
             android:textSize="24sp"
             android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.187"
+            app:layout_constraintHorizontal_bias="0.812"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="854dp" />
+            app:layout_constraintTop_toBottomOf="@+id/details_terrain" />
 
-        <Button
-            android:id="@+id/goto_reinforcement_button"
+        <TextView
+            android:id="@+id/note_reinforcements"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="956dp"
-            android:text="@string/goto_reinforcements_button_text"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/note_reinforcements"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.536"
+            app:layout_constraintHorizontal_bias="0.812"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/details_flying" />
+
+        <Button
+            android:id="@+id/goto_shooting_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:text="@string/goto_shooting_button_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.41"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/note_reinforcements" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

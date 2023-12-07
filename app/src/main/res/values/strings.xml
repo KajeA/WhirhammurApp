@@ -60,5 +60,29 @@
         Can move over enemy models
         Measure path through air
     </string>
-    <string name="goto_reinforcements_button_text">Go To REINFORCEMENTS</string>
+    <string name="note_reinforcements">If needed - call in REINFORCEMENTS</string>
+    <string name="goto_shooting_button_text">Go To SHOOTING</string>
+
+    <!-- Shooting Fragment -->
+    <string name="title_shooting">Shooting Phase</string>
+    <string name="details_shooting">
+        Select all targets unit will shoot at \n
+        All targets ust be visible to the shooter and within RANGE
+        Can split targets between multiple weapons
+    </string>
+    <string name="goto_attack_button_text">ATTACK</string>
+    <!-- TODO: Add more notes about shooting -->
+
+    <!-- Attack Fragment -->
+    <string name="title_attack">Making Attacks</string>
+    <string name="details_attack_hit">Hit Roll:
+    Roll D6 for each chnace to hit (A)
+        Attack succeeds if higher than (BS) Ballistic Skill (Ranged) or (WS) Weapon Skill (Melee)
+        Natural 6 always succeeds, Natural 1 always fails
+        Hit roll can never be modified more than -1 or +1
+    </string>
+    <string name="details_attack_wound">
+        Wound Roll:
+        Compare attacker\'s Strength (S) vs Target\'s Toughness (T)
+    </string>
 </resources>
