@@ -85,4 +85,13 @@
         Wound Roll:
         Compare attacker\'s Strength (S) vs Target\'s Toughness (T)
     </string>
+    <string name="strength_input">S</string>
+    <string name="toughness_input">T</string>
+    <string name="calculate_wound_text">Calculate</string>
+    <string name="wounds_message_double">Strength is double toughness, you need 2+</string>
+    <string name="wounds_message_greater">Strength is greater than toughness, you need 3+</string>
+    <string name="wounds_message_equal">Strength is equal to toughness, you need 4+</string>
+    <string name="wounds_message_less">Strength is less than toughness, you need 5+</string>
+    <string name="wounds_message_half">Strength is half toughness, you need 6+</string>
+    <string name="details_wound_results">Paceholder</string>
 </resources>
