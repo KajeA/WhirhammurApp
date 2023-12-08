@@ -2,8 +2,10 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".StartFragment"
-    style="@style/base_style">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A63CC"
+    tools:context=".AttackFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -12,95 +14,73 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/title_command"
+            android:id="@+id/title_attack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="36dp"
             android:layout_marginEnd="1dp"
             android:background="@color/colorPrimaryDark"
-            android:text="@string/title_command"
+            android:text="@string/title_attack"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.414"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/details_command"
+            android:id="@+id/details_attack_hit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="68dp"
             android:layout_marginEnd="1dp"
             android:background="@color/colorPrimaryDark"
-            android:text="@string/details_command"
+            android:text="@string/details_attack_hit"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title_command" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/title_battleshock"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="118dp"
-            android:layout_marginTop="44dp"
-            android:layout_marginEnd="111dp"
-            android:layout_marginBottom="29dp"
-            android:background="@color/colorPrimaryDark"
-            android:text="@string/title_battleshock"
-            android:textColor="@android:color/white"
-            android:textSize="24sp"
-            android:typeface="serif"
-            app:layout_constraintBottom_toTopOf="@+id/details_battleshock"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/details_command" />
-
-        <TextView
-            android:id="@+id/details_battleshock"
+            android:id="@+id/details_attack_wound"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
             android:layout_marginTop="320dp"
             android:layout_marginEnd="1dp"
             android:background="@color/colorPrimaryDark"
-            android:text="@string/details_battleshock"
+            android:text="@string/details_attack_wound"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.166"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/test_battleshock_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="76dp"
-            android:text="@string/test_battleshock_button_text"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/details_battleshock" />
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="118dp"
+            android:layout_height="62dp"
+            android:hint="S"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="442dp" />
 
         <Button
-            android:id="@+id/goto_movement_button"
+            android:id="@+id/goto_attack_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="76dp"
-            android:layout_marginEnd="18dp"
-            android:text="@string/goto_movement_button_text"
+            android:layout_marginTop="112dp"
+            android:text="@string/goto_attack_button_text"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/test_battleshock_button"
-            app:layout_constraintTop_toBottomOf="@+id/details_battleshock" />
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_attack_wound" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

@@ -19,7 +19,70 @@
         No - proceed to MOVEMENT \n
         Yes - continue to test \n
     </string>
+    <!-- TODO: tooltip for Attached Units -->
     <string name="test_battleshock_button_text">Test BATTLESHOCK</string>
     <string name="goto_movement_button_text">Go To MOVEMENT</string>
     <!-- TODO: have a faction selection on startup to create additional rules -->
+
+    <!-- Battleshock Fragment -->
+    <string name="details_battleshock2">
+        - Roll 2D6 \n
+        - If result is greater than or equal to the highest Leadership in unit - PASS \n
+        - If Failed - Unit is BATTLE SHOCKED \n
+    </string>
+    <string name="details_battleshock3">
+        - Objective Control characteristic of all models is 0 \n
+        - Falling back requires a Desperate Escape test for each model \n
+        - Unaffected by player's stratagems \n
+    </string>
+    <!-- TODO: have a separate Desperate Escape text view and use here and in movement -->
+
+    <!-- Movement Fragment -->
+    <string name="title_movement">3. Movement</string>
+    <string name="details_movement">
+        - Move units - if within Engagement Range (ER) you must fall back or not move \n
+        - Models can move over friendly units unless the are Monsters or Vehicles \n
+        Normal Move = Up to M", not into ER \n
+        Advance Move = Up to M+D6", not into ER, cannot shoot or charge \n
+    </string>
+    <!-- TODO: make tool tip for engagement range -->
+    <string name="title_fallback">Fall Back</string>
+    <string name="details_fallback">
+        - Models can move up to M" and cannot shoot or charge \n
+        - Must make Desperate Escape to move over enemies (unless TITANIC or FLY) \n
+    </string>
+    <string name="details_terrain">
+        Terrain \n
+        Can move freely over features 2" or less, otherwise have to climb
+    </string>
+    <string name="details_flying">
+        Flying \n
+        Can move over enemy models
+        Measure path through air
+    </string>
+    <string name="note_reinforcements">If needed - call in REINFORCEMENTS</string>
+    <string name="goto_shooting_button_text">Go To SHOOTING</string>
+
+    <!-- Shooting Fragment -->
+    <string name="title_shooting">Shooting Phase</string>
+    <string name="details_shooting">
+        Select all targets unit will shoot at \n
+        All targets ust be visible to the shooter and within RANGE
+        Can split targets between multiple weapons
+    </string>
+    <string name="goto_attack_button_text">ATTACK</string>
+    <!-- TODO: Add more notes about shooting -->
+
+    <!-- Attack Fragment -->
+    <string name="title_attack">Making Attacks</string>
+    <string name="details_attack_hit">Hit Roll:
+    Roll D6 for each chnace to hit (A)
+        Attack succeeds if higher than (BS) Ballistic Skill (Ranged) or (WS) Weapon Skill (Melee)
+        Natural 6 always succeeds, Natural 1 always fails
+        Hit roll can never be modified more than -1 or +1
+    </string>
+    <string name="details_attack_wound">
+        Wound Roll:
+        Compare attacker\'s Strength (S) vs Target\'s Toughness (T)
+    </string>
 </resources>

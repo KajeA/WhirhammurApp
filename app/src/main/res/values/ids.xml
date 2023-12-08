@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_StartFragment_to_BattleShockFragment" type="id" />
+    <item name="action_BattleShockFragment_to_StartFragment" type="id" />
+    <item name="action_StartFragment_to_MovementFragment" type="id" />
+    <item name="action_BattleShockFragment_to_MovementFragment" type="id" />
+    <item name="goto_reinforcements_button" type="id" />
+    <item name="action_MovementFragment_to_ReinforcementsFragment" type="id" />
+    <item name="action_MovementFragment_to_ShootingFragment" type="id" />
+    <item name="action_ShootingFragment_to_AttackFragment" type="id" />
+</resources>

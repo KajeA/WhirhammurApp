@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -40,9 +39,9 @@ public class StartFragment extends Fragment {
 
         view.findViewById(R.id.goto_movement_button).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Toast myToast = Toast.makeText(getActivity(), "Hello toast!", Toast.LENGTH_SHORT);
-                myToast.show();
+            public void onClick(View view) {
+                NavHostFragment.findNavController(StartFragment.this)
+                        .navigate(R.id.action_StartFragment_to_MovementFragment);
             }
         });
     }
