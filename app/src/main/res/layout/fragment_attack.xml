@@ -105,14 +105,75 @@
             android:layout_marginTop="588dp"
             android:layout_marginEnd="1dp"
             android:background="@color/colorPrimaryDark"
+            android:text="@string/wounds_message_output"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:typeface="serif"
-            android:text="Wounds Message: "
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintHorizontal_bias="0.414"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/details_wounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/details_wounds"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wounds_message_output" />
+
+        <TextView
+            android:id="@+id/details_wounds_allocate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="31dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/details_wounds_allocate"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_wounds" />
+
+        <TextView
+            android:id="@+id/details_saving_throw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/details_saving_throw"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_wounds_allocate" />
+
+        <TextView
+            android:id="@+id/details_inflict_damage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/details_inflict_damage"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_saving_throw" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

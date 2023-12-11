@@ -44,24 +44,25 @@ public class AttackFragment extends Fragment {
                 int toughness = Integer.parseInt(toughnessInput.getText().toString());
                 String wounds_message = "";
 
-            // if strength is double toughness 2+
-            // if strength is greater than toughness 3+
-            // if strength is equal to toughness 4+
-            // if strength is less than toughness 5+
-            // if strength is half toughness 6+
-            if (strength >= 2 * toughness) {
-                wounds_message = getString(R.string.wounds_message_double);
-            } else if (strength > toughness) {
-                wounds_message = getString(R.string.wounds_message_greater);
-            } else if (strength == toughness) {
-                wounds_message = getString(R.string.wounds_message_equal);
-            } else if (strength < toughness) {
-                wounds_message = getString(R.string.wounds_message_less);
-            } else if (strength <= toughness / 2)
-                wounds_message = getString(R.string.wounds_message_half);
-            }
+                // if strength is double toughness 2+
+                // if strength is greater than toughness 3+
+                // if strength is equal to toughness 4+
+                // if strength is less than toughness 5+
+                // if strength is half toughness 6+
+                if (strength >= 2 * toughness) {
+                    wounds_message = getString(R.string.wounds_message_double);
+                } else if (strength > toughness) {
+                    wounds_message = getString(R.string.wounds_message_greater);
+                } else if (strength == toughness) {
+                    wounds_message = getString(R.string.wounds_message_equal);
+                } else if (strength < toughness) {
+                    wounds_message = getString(R.string.wounds_message_less);
+                } else if (strength <= toughness / 2) {
+                    wounds_message = getString(R.string.wounds_message_half);
+                }
 
-            woundsMessageOutput.setText(wounds_message);
+                woundsMessageOutput.setText(wounds_message);
+            }
 
         });
     };

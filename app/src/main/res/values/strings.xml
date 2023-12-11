@@ -76,7 +76,7 @@
     <!-- Attack Fragment -->
     <string name="title_attack">Making Attacks</string>
     <string name="details_attack_hit">Hit Roll:
-    Roll D6 for each chnace to hit (A)
+    Roll D6 for each chance to hit (A)
         Attack succeeds if higher than (BS) Ballistic Skill (Ranged) or (WS) Weapon Skill (Melee)
         Natural 6 always succeeds, Natural 1 always fails
         Hit roll can never be modified more than -1 or +1
@@ -93,5 +93,24 @@
     <string name="wounds_message_equal">Strength is equal to toughness, you need 4+</string>
     <string name="wounds_message_less">Strength is less than toughness, you need 5+</string>
     <string name="wounds_message_half">Strength is half toughness, you need 6+</string>
-    <string name="details_wound_results">Paceholder</string>
+    <string name="wounds_message_output">Placeholder</string>
+    <string name="details_wounds">
+        Natural 6 always succeeds, Natural 1 always fails
+        Hit roll can never be modified more than -1 or +1
+    </string>
+    <string name="details_wounds_allocate">
+        Allocate Attack: Target player allocates wounds, models that have lost wounds take priority, model doesn\'t
+        have to be visible or within range
+    </string>
+    <string name="details_saving_throw">
+        Saving Throw: Roll D6 and modify by Armour Penetration (AP). \n
+        Natural 1 always fails, roll can never be modified more than -1 or +1 \n
+        If result is higher than Save (SV), attack fails, sequence ends \n
+        If result is lower, model takes damage
+    </string>
+    <!-- TODO: Note for invunerable save -->
+    <string name="details_inflict_damage">
+        Inflict Damage: Use Damage (D) from attack \n
+        Lose one wound for each point of damage \n
+    </string>
 </resources>
