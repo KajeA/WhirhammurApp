@@ -33,7 +33,15 @@ public class ShootingFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(ShootingFragment.this)
-                        .navigate(R.id.action_ShootingFragment_to_AttackFragment);
+                        .navigate(R.id.action_ShootingFragment_to_AttackFragment2);
+            }
+        });
+
+        view.findViewById(R.id.goto_charge_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(ShootingFragment.this)
+                        .navigate(R.id.action_ShootingFragment_to_chargeFragment);
             }
         });
     }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3A63CC"
-    tools:context=".ShootingFragment">
+    tools:context=".ChargeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,14 +14,14 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/title_shooting"
+            android:id="@+id/title_charge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
             android:layout_marginTop="36dp"
             android:layout_marginEnd="1dp"
             android:background="@color/colorPrimaryDark"
-            android:text="@string/title_shooting"
+            android:text="@string/title_charge"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:typeface="serif"
@@ -31,42 +31,33 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/details_shooting"
+            android:id="@+id/details_charge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="84dp"
             android:layout_marginEnd="1dp"
             android:background="@color/colorPrimaryDark"
-            android:text="@string/details_shooting"
+            android:text="@string/details_charge"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/goto_attack_button"
+            android:id="@+id/goto_fight_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="64dp"
-            android:text="@string/goto_attack_button_text"
+            android:layout_marginStart="167dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="140dp"
+            android:text="@string/goto_fight_button_text"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.867"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/details_shooting" />
-
-        <Button
-            android:id="@+id/goto_charge_button"
-            android:layout_width="151dp"
-            android:layout_height="42dp"
-            android:text="@string/goto_charge_button_text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.061"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="319dp" />
+            app:layout_constraintTop_toBottomOf="@+id/details_charge" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

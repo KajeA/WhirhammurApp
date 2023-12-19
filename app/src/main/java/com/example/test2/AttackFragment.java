@@ -65,7 +65,19 @@ public class AttackFragment extends Fragment {
             }
 
         });
+
+        Button previousStepButton = view.findViewById(R.id.previous_step_button);
+        previousStepButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navigateBack();
+            }
+        });
     };
+
+    private void navigateBack() {
+        NavHostFragment.findNavController(this).popBackStack();
+    }
 
 
 //        view.findViewById(R.id.goto_attack_button).setOnClickListener(new View.OnClickListener() {

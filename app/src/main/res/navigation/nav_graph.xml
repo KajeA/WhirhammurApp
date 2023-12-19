@@ -14,10 +14,56 @@
         <action
             android:id="@+id/action_StartFragment_to_BattleShockFragment"
             app:destination="@id/BattleShockFragment" />
+        <action
+            android:id="@+id/action_StartFragment_to_MovementFragment3"
+            app:destination="@id/MovementFragment" />
     </fragment>
     <fragment
         android:id="@+id/BattleShockFragment"
         android:name="com.example.test2.BattleShockFragment"
         android:label="@string/battleshock_fragment_label"
-        tools:layout="@layout/fragment_battle_shock"/>
+        tools:layout="@layout/fragment_battle_shock">
+        <action
+            android:id="@+id/action_BattleShockFragment_to_MovementFragment2"
+            app:destination="@id/MovementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MovementFragment"
+        android:name="com.example.test2.MovementFragment"
+        android:label="fragment_movement"
+        tools:layout="@layout/fragment_movement" >
+        <action
+            android:id="@+id/action_MovementFragment_to_ShootingFragment2"
+            app:destination="@id/ShootingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ShootingFragment"
+        android:name="com.example.test2.ShootingFragment"
+        android:label="fragment_shooting"
+        tools:layout="@layout/fragment_shooting" >
+        <action
+            android:id="@+id/action_ShootingFragment_to_AttackFragment2"
+            app:destination="@id/AttackFragment" />
+        <action
+            android:id="@+id/action_ShootingFragment_to_chargeFragment"
+            app:destination="@id/ChargeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AttackFragment"
+        android:name="com.example.test2.AttackFragment"
+        android:label="fragment_attack"
+        tools:layout="@layout/fragment_attack" />
+    <fragment
+        android:id="@+id/ChargeFragment"
+        android:name="com.example.test2.ChargeFragment"
+        android:label="fragment_charge"
+        tools:layout="@layout/fragment_charge" >
+        <action
+            android:id="@+id/action_ChargeFragment_to_fightFragment"
+            app:destination="@id/fightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fightFragment"
+        android:name="com.example.test2.FightFragment"
+        android:label="FightFragment" />
 </navigation>

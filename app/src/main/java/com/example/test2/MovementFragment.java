@@ -33,7 +33,7 @@ public class MovementFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(MovementFragment.this)
-                        .navigate(R.id.action_MovementFragment_to_ShootingFragment);
+                        .navigate(R.id.action_MovementFragment_to_ShootingFragment2);
             }
         });
     }
@@ -43,5 +43,4 @@ public class MovementFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
 }

@@ -33,7 +33,7 @@
     <string name="details_battleshock3">
         - Objective Control characteristic of all models is 0 \n
         - Falling back requires a Desperate Escape test for each model \n
-        - Unaffected by player's stratagems \n
+        - Unaffected by player\'s stratagems
     </string>
     <!-- TODO: have a separate Desperate Escape text view and use here and in movement -->
 
@@ -70,7 +70,8 @@
         All targets ust be visible to the shooter and within RANGE
         Can split targets between multiple weapons
     </string>
-    <string name="goto_attack_button_text">ATTACK</string>
+    <string name="goto_attack_button_text">SHOOTING ATTACK</string>
+    <string name="goto_charge_button_text">CHARGE</string>
     <!-- TODO: Add more notes about shooting -->
 
     <!-- Attack Fragment -->
@@ -112,5 +113,43 @@
     <string name="details_inflict_damage">
         Inflict Damage: Use Damage (D) from attack \n
         Lose one wound for each point of damage \n
+    </string>
+    <string name="previous_step_text">Finished Attacks</string>
+
+    <!-- Charge Fragment-->
+    <string name="title_charge">Charge Phase</string>
+    <string name="details_charge">
+        Unit can charge if:
+        - Is within 12" \n
+        - Did not advance or fall back \n
+        - Not within Engaemant Range \n
+        - Not an AIRCRAFT
+        Target doesn\'t need to be visible
+        Roll 2D6 = max number of inches each model can move
+        Charge roll must resyult in unit being:
+        Within Enagments range of every unit intial selected
+        Not withing Engagemtn Range of an enemy not slectedt
+        In Unit Coherency
+        OPr charge fails and unit doesn't move
+    </string>
+    <string name="goto_fight_button_text">FIGHT</string>
+
+    <!-- Fight Fragment-->
+    <string name="title_fight">Fight Phase</string>
+    <string name="details_fight0">
+        *Both players alternate fighting with untis* \n
+        Unit must be withing Engagemtn Range and/or Charged \n
+    </string>
+    <string name="details_fight1">Fights First - all units with abilty</string>
+    <string name="subtitle_fight1">Remaining Combats:</string>
+    <string name="details_fight1">
+        1) Pile In
+        -Each model not already base-to-base canmove up tp 3"
+        - Must adhere to Unit COhernacy, Engament Rnage and end up closer
+    </string>
+    <string name="details_fight2">
+        2) Melee Attacks
+        - Must be in Engagment Range or base-to-base contact with another model int he unit that is also base-to-base
+        - Declare which weapon to use
     </string>
 </resources>
