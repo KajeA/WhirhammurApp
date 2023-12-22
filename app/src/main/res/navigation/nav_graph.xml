@@ -59,11 +59,16 @@
         android:label="fragment_charge"
         tools:layout="@layout/fragment_charge" >
         <action
-            android:id="@+id/action_ChargeFragment_to_fightFragment"
-            app:destination="@id/fightFragment" />
+            android:id="@+id/action_ChargeFragment_to_FightFragment"
+            app:destination="@id/FightFragment" />
     </fragment>
     <fragment
-        android:id="@+id/fightFragment"
+        android:id="@+id/FightFragment"
         android:name="com.example.test2.FightFragment"
-        android:label="FightFragment" />
+        android:label="fragment_fight"
+        tools:layout="@layout/fragment_fight" >
+        <action
+            android:id="@+id/action_FightFragment_to_AttackFragment"
+            app:destination="@id/AttackFragment" />
+    </fragment>
 </navigation>

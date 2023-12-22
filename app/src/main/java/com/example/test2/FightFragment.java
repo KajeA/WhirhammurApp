@@ -29,13 +29,13 @@ public class FightFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-//        view.findViewById(R.id.goto_attack_button).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                NavHostFragment.findNavController(FightFragment.this)
-//                        .navigate(R.id.action_ChargeFragment_to_FightFragment);
-//            }
-//        });
+        view.findViewById(R.id.goto_attack_button2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(FightFragment.this)
+                        .navigate(R.id.action_ChargeFragment_to_FightFragment);
+            }
+        });
     }
 
     @Override

@@ -31,19 +31,35 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/details_fight"
+            android:id="@+id/note_fight0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
-            android:layout_marginTop="136dp"
+            android:layout_marginTop="84dp"
             android:layout_marginEnd="1dp"
             android:background="@color/colorPrimaryDark"
-            android:text="@string/details_fight0"
+            android:text="@string/note_fight0"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/subtitle_fight1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="332dp"
+            android:layout_marginEnd="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/subtitle_fight1"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
-            android:layout_marginTop="84dp"
+            android:layout_marginTop="332dp"
             android:layout_marginEnd="1dp"
             android:background="@color/colorPrimaryDark"
             android:text="@string/details_fight1"
@@ -60,21 +76,75 @@
             android:textSize="24sp"
             android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/details_fight0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginEnd="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/details_fight0"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/details_fight2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="516dp"
+            android:layout_marginEnd="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/details_fight2"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/goto_fight_button"
+            android:id="@+id/goto_attack_button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="167dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="140dp"
-            android:text="@string/goto_fight_button_text"
+            android:text="@string/goto_attack_button_text2"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="759dp" />
+
+        <TextView
+            android:id="@+id/details_fight3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="820dp"
+            android:layout_marginEnd="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/details_fight3"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/details_charge" />
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/goto_start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goto_start_button_text"
+            tools:layout_editor_absoluteX="67dp"
+            tools:layout_editor_absoluteY="1078dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

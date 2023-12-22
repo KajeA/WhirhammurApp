@@ -136,11 +136,11 @@
 
     <!-- Fight Fragment-->
     <string name="title_fight">Fight Phase</string>
-    <string name="details_fight0">
+    <string name="note_fight0">
         *Both players alternate fighting with untis* \n
         Unit must be withing Engagemtn Range and/or Charged \n
     </string>
-    <string name="details_fight1">Fights First - all units with abilty</string>
+    <string name="details_fight0">Fights First - all units with abilty</string>
     <string name="subtitle_fight1">Remaining Combats:</string>
     <string name="details_fight1">
         1) Pile In
@@ -150,6 +150,15 @@
     <string name="details_fight2">
         2) Melee Attacks
         - Must be in Engagment Range or base-to-base contact with another model int he unit that is also base-to-base
-        - Declare which weapon to use
+        - Declare which weapon to use, note number of Attacks (A)
+        - Select Targets, attacks can be split
     </string>
+    <string name="goto_attack_button_text2">ATTACK</string>
+    <string name="details_fight3">
+        3) Consolidate
+        - Move up to 3"
+        - Must ebd up closer, in base-to-base contact, in Cohernacy and Engament Range of enemny
+        - Alternatevly, can consolidate towards objectove marker, if it will end up in range
+    </string>
+    <string name="goto_start_button_text">Return To Start Of Battleflow</string>
 </resources>
