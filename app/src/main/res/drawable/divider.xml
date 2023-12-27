@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="line">
+    <solid android:color="@color/divider" /> <!-- Background color -->
+    <stroke android:color="@color/divider" android:width="5dp" /> <!-- Border color and width -->
+    <corners android:radius="5dp" /> <!-- Optional: Corner radius -->
+</shape>
+
+
+

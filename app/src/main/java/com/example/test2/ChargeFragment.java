@@ -33,7 +33,7 @@ public class ChargeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(ChargeFragment.this)
-                        .navigate(R.id.action_ChargeFragment_to_fightFragment);
+                        .navigate(R.id.action_ChargeFragment_to_FightFragment);
             }
         });
     }

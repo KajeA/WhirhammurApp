@@ -2,8 +2,13 @@
     <string name="app_name">Whirhammur Battle App</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="start_fragment_label">Start Fragment</string>
-    <string name="battleshock_fragment_label">Battle Shock Fragment</string>
+    <string name="start_fragment_label">Start</string>
+    <string name="battleshock_fragment_label">Battle Shock</string>
+    <string name="movement_fragment_label">Movement</string>
+    <string name="shooting_fragment_label">Shooting</string>
+    <string name="attack_fragment_label">Attack</string>
+    <string name="fight_fragment_label">Fight</string>
+    <string name="charge_fragment_label">Charge</string>
 
     <!-- Start Fragment -->
     <string name="title_command">1. Command Phase</string>
@@ -12,7 +17,7 @@
         - Resolve additional rules \n
         - Use stratagems \n
     </string>
-    <string name="title_battleshock">2. Battle Shock</string>
+    <string name="title_battleshock">Battle Shock</string>
     <string name="details_battleshock">
         Are any units below half strength? \n
         (Unit with starting strength of 1 has wounds less than half or number of models less than half starting strength) \n
@@ -26,14 +31,20 @@
 
     <!-- Battleshock Fragment -->
     <string name="details_battleshock2">
-        - Roll 2D6 \n
-        - If result is greater than or equal to the highest Leadership in unit - PASS \n
-        - If Failed - Unit is BATTLE SHOCKED \n
+        Roll 2D6 \n
+        - \n
+        If result is greater than or equal to the highest Leadership (LD) in unit - PASS \n
+        - \n
+        On failure, the unit is BATTLE SHOCKED \n
     </string>
     <string name="details_battleshock3">
-        - Objective Control characteristic of all models is 0 \n
-        - Falling back requires a Desperate Escape test for each model \n
-        - Unaffected by player\'s stratagems
+        While Battle Shocked: \n
+        - \n
+        Objective Control of all models is 0 \n
+        - \n
+        Falling back requires a Desperate Escape test for each model \n
+        - \n
+        Unaffected by player\'s stratagems
     </string>
     <!-- TODO: have a separate Desperate Escape text view and use here and in movement -->
 
@@ -77,14 +88,19 @@
     <!-- Attack Fragment -->
     <string name="title_attack">Making Attacks</string>
     <string name="details_attack_hit">Hit Roll:
-    Roll D6 for each chance to hit (A)
-        Attack succeeds if higher than (BS) Ballistic Skill (Ranged) or (WS) Weapon Skill (Melee)
-        Natural 6 always succeeds, Natural 1 always fails
-        Hit roll can never be modified more than -1 or +1
+        Roll D6 for each chance to hit (A) \n
+        - \n
+        Attack succeeds if:  \n
+        Ranged higher than (BS) Ballistic Skill \n
+        Melee higher than (WS) Weapon Skill \n
+        - \n
+        Natural 6 always succeeds, Natural 1 always fails \n
+        - \n
+        Hit roll can never be modified more than -1 or +1 \n
     </string>
     <string name="details_attack_wound">
         Wound Roll:
-        Compare attacker\'s Strength (S) vs Target\'s Toughness (T)
+        Compare attacker\'s Strength (S) vs target\'s Toughness (T)
     </string>
     <string name="strength_input">S</string>
     <string name="toughness_input">T</string>
@@ -94,71 +110,91 @@
     <string name="wounds_message_equal">Strength is equal to toughness, you need 4+</string>
     <string name="wounds_message_less">Strength is less than toughness, you need 5+</string>
     <string name="wounds_message_half">Strength is half toughness, you need 6+</string>
-    <string name="wounds_message_output">Placeholder</string>
+    <string name="wounds_message_output"></string>
     <string name="details_wounds">
-        Natural 6 always succeeds, Natural 1 always fails
+        Natural 6 always succeeds, Natural 1 always fails \n
         Hit roll can never be modified more than -1 or +1
     </string>
     <string name="details_wounds_allocate">
-        Allocate Attack: Target player allocates wounds, models that have lost wounds take priority, model doesn\'t
-        have to be visible or within range
+        Allocate Attack: Target player allocates wounds \n
+        - \n
+        Models that have lost wounds take priority \n
+        - \n
+        Model doesn\'t have to be visible or within range
     </string>
     <string name="details_saving_throw">
-        Saving Throw: Roll D6 and modify by Armour Penetration (AP). \n
+        Saving Throw:
+        Roll D6 and modify by Armor Penetration (AP) \n
+        - \n
         Natural 1 always fails, roll can never be modified more than -1 or +1 \n
+        - \n
         If result is higher than Save (SV), attack fails, sequence ends \n
+        -\n
         If result is lower, model takes damage
     </string>
     <!-- TODO: Note for invunerable save -->
     <string name="details_inflict_damage">
         Inflict Damage: Use Damage (D) from attack \n
+        - \n
         Lose one wound for each point of damage \n
     </string>
     <string name="previous_step_text">Finished Attacks</string>
 
     <!-- Charge Fragment-->
     <string name="title_charge">Charge Phase</string>
+    <string name="details_charge_note">
+        Unit can charge if: \n
+        • It is within 12" of an enemy
+        • Did not Advance or Fall Back
+        • Not within Engagement Range (ER)
+        • Not an AIRCRAFT
+        • Target doesn\'t need to be visible
+    </string>
     <string name="details_charge">
-        Unit can charge if:
-        - Is within 12" \n
-        - Did not advance or fall back \n
-        - Not within Engaemant Range \n
-        - Not an AIRCRAFT
-        Target doesn\'t need to be visible
-        Roll 2D6 = max number of inches each model can move
-        Charge roll must resyult in unit being:
-        Within Enagments range of every unit intial selected
-        Not withing Engagemtn Range of an enemy not slectedt
-        In Unit Coherency
-        OPr charge fails and unit doesn't move
+        Roll 2D6 = max inches each model can move \n
+        - \n
+       • Charge roll must result in unit being:\n
+       • Within ER of every unit initially selected \n
+       • Not within ER of an enemy not reselected \n
+       • In Unit Coherency \n
+        - \n
+        Or charge fails and unit doesn't move
     </string>
     <string name="goto_fight_button_text">FIGHT</string>
 
     <!-- Fight Fragment-->
     <string name="title_fight">Fight Phase</string>
     <string name="note_fight0">
-        *Both players alternate fighting with untis* \n
-        Unit must be withing Engagemtn Range and/or Charged \n
+        Both players alternate fighting with units \n
+        - \n
+        Unit must be within Engagement Range and/or have Charged \n
     </string>
-    <string name="details_fight0">Fights First - all units with abilty</string>
+    <string name="details_fight0">
+        Fights First - All units with ability
+    </string>
     <string name="subtitle_fight1">Remaining Combats:</string>
     <string name="details_fight1">
-        1) Pile In
-        -Each model not already base-to-base canmove up tp 3"
-        - Must adhere to Unit COhernacy, Engament Rnage and end up closer
+        1) Pile In \n
+        Each model not already base-to-base can move up to 3\" \n
+        -\n
+        Must adhere to Unit Coherency, ER and end up closer to enemy unit
     </string>
     <string name="details_fight2">
-        2) Melee Attacks
-        - Must be in Engagment Range or base-to-base contact with another model int he unit that is also base-to-base
-        - Declare which weapon to use, note number of Attacks (A)
-        - Select Targets, attacks can be split
+        2) Melee Attacks \n
+        Must be in ER or base-to-base contact with another model in the unit that is base-to-base with an enemy \n
+        -\n
+        Declare which weapon to use, note number of Attacks (A) \n
+        -\n
+        Select targets, attacks can be split
     </string>
     <string name="goto_attack_button_text2">ATTACK</string>
     <string name="details_fight3">
-        3) Consolidate
-        - Move up to 3"
-        - Must ebd up closer, in base-to-base contact, in Cohernacy and Engament Range of enemny
-        - Alternatevly, can consolidate towards objectove marker, if it will end up in range
+        3) Consolidate \n
+        Move up to 3\" \n
+        - \n
+        Must end up closer, in base-to-base contact, in Coherency and ER of enemy \n
+        - \n
+        Alternately, unit can consolidate towards objective marker, if it will end up in range
     </string>
     <string name="goto_start_button_text">Return To Start Of Battleflow</string>
 </resources>
