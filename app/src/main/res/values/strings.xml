@@ -10,23 +10,26 @@
     <string name="fight_fragment_label">Fight</string>
     <string name="charge_fragment_label">Charge</string>
 
+    <string name="divider_content_summary">Divider</string>
     <!-- Start Fragment -->
-    <string name="title_command">1. Command Phase</string>
+    <string name="title_command">Command Phase</string>
     <string name="details_command">
-        - Both players gain 1CP \n
-        - Resolve additional rules \n
-        - Use stratagems \n
+        Both players gain 1CP \n
+        - \n
+        Resolve additional rules \n
+        - \n
+        Use stratagems \n
     </string>
     <string name="title_battleshock">Battle Shock</string>
     <string name="details_battleshock">
-        Are any units below half strength? \n
-        (Unit with starting strength of 1 has wounds less than half or number of models less than half starting strength) \n
-        No - proceed to MOVEMENT \n
-        Yes - continue to test \n
+        Are any units below half strength/starting number of units? \n
+        - \n
+        Unit with starting strength of 1 (single unit) is at half strength if less than half starting wounds \n
+
     </string>
     <!-- TODO: tooltip for Attached Units -->
-    <string name="test_battleshock_button_text">Test BATTLESHOCK</string>
-    <string name="goto_movement_button_text">Go To MOVEMENT</string>
+    <string name="test_battleshock_button_text">YES - BATTLESHOCK</string>
+    <string name="goto_movement_button_text">NO - MOVEMENT</string>
     <!-- TODO: have a faction selection on startup to create additional rules -->
 
     <!-- Battleshock Fragment -->
@@ -49,26 +52,34 @@
     <!-- TODO: have a separate Desperate Escape text view and use here and in movement -->
 
     <!-- Movement Fragment -->
-    <string name="title_movement">3. Movement</string>
+    <string name="title_movement">Movement</string>
     <string name="details_movement">
-        - Move units - if within Engagement Range (ER) you must fall back or not move \n
-        - Models can move over friendly units unless the are Monsters or Vehicles \n
-        Normal Move = Up to M", not into ER \n
+        Move units:
+        If within Engagement Range (ER) you must fall back or not move \n
+        - \n
+        Models can move over friendly units unless the are Monsters or Vehicles \n
+        - \n
+        Normal Move = Up to M\", not into ER \n
+        - \n
         Advance Move = Up to M+D6", not into ER, cannot shoot or charge \n
     </string>
     <!-- TODO: make tool tip for engagement range -->
     <string name="title_fallback">Fall Back</string>
     <string name="details_fallback">
-        - Models can move up to M" and cannot shoot or charge \n
-        - Must make Desperate Escape to move over enemies (unless TITANIC or FLY) \n
+        Models can move up to M\" and cannot shoot or charge \n
+        - \n
+        Must make Desperate Escape to move over enemies (unless TITANIC or FLY) \n
     </string>
     <string name="details_terrain">
-        Terrain \n
+        Terrain: \n
+        - \n
         Can move freely over features 2" or less, otherwise have to climb
     </string>
     <string name="details_flying">
-        Flying \n
-        Can move over enemy models
+        Flying: \n
+        - \n
+        Can move over enemy models \n
+        - \n
         Measure path through air
     </string>
     <string name="note_reinforcements">If needed - call in REINFORCEMENTS</string>
@@ -78,11 +89,13 @@
     <string name="title_shooting">Shooting Phase</string>
     <string name="details_shooting">
         Select all targets unit will shoot at \n
-        All targets ust be visible to the shooter and within RANGE
+        - \n
+        All targets must be visible to the shooter and within range \n
+        - \n
         Can split targets between multiple weapons
     </string>
     <string name="goto_attack_button_text">SHOOTING ATTACK</string>
-    <string name="goto_charge_button_text">CHARGE</string>
+    <string name="goto_charge_button_text"> Skip to CHARGE</string>
     <!-- TODO: Add more notes about shooting -->
 
     <!-- Attack Fragment -->
@@ -110,7 +123,7 @@
     <string name="wounds_message_equal">Strength is equal to toughness, you need 4+</string>
     <string name="wounds_message_less">Strength is less than toughness, you need 5+</string>
     <string name="wounds_message_half">Strength is half toughness, you need 6+</string>
-    <string name="wounds_message_output"></string>
+    <string name="wounds_message_output">""</string>
     <string name="details_wounds">
         Natural 6 always succeeds, Natural 1 always fails \n
         Hit roll can never be modified more than -1 or +1
