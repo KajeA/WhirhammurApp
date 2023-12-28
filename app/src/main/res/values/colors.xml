@@ -2,6 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#811E1E</color>
     <!-- Background -->
     <color name="mainBackground">#000000</color>
     <color name="screenBackground">#000000</color>

@@ -1,14 +1,16 @@
 <resources>
     <string name="app_name">Whirhammur Battle App</string>
+    <string name="action_escape">Desperate Escape</string>
+    <string name="action_erange">Engagement Range</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="start_fragment_label">Start</string>
+    <string name="start_fragment_label">Command Phase</string>
     <string name="battleshock_fragment_label">Battle Shock</string>
-    <string name="movement_fragment_label">Movement</string>
-    <string name="shooting_fragment_label">Shooting</string>
-    <string name="attack_fragment_label">Attack</string>
-    <string name="fight_fragment_label">Fight</string>
-    <string name="charge_fragment_label">Charge</string>
+    <string name="movement_fragment_label">Movement Phase</string>
+    <string name="shooting_fragment_label">Shooting Phase</string>
+    <string name="attack_fragment_label">Making Attacks</string>
+    <string name="fight_fragment_label">Fight Phase</string>
+    <string name="charge_fragment_label">Charge Phase</string>
 
     <string name="divider_content_summary">Divider</string>
     <!-- Start Fragment -->
@@ -49,10 +51,11 @@
         - \n
         Unaffected by player\'s stratagems
     </string>
+    <string name="goto_movement_bs_button_text">Proceed to MOVEMENT</string>
     <!-- TODO: have a separate Desperate Escape text view and use here and in movement -->
 
     <!-- Movement Fragment -->
-    <string name="title_movement">Movement</string>
+    <string name="title_movement">Movement Phase</string>
     <string name="details_movement">
         Move units:
         If within Engagement Range (ER) you must fall back or not move \n
@@ -95,7 +98,7 @@
         Can split targets between multiple weapons
     </string>
     <string name="goto_attack_button_text">SHOOTING ATTACK</string>
-    <string name="goto_charge_button_text"> Skip to CHARGE</string>
+    <string name="goto_charge_button_text">Proceed to CHARGE</string>
     <!-- TODO: Add more notes about shooting -->
 
     <!-- Attack Fragment -->
@@ -166,12 +169,12 @@
     <string name="details_charge">
         Roll 2D6 = max inches each model can move \n
         - \n
-       • Charge roll must result in unit being:\n
+       Charge roll must result in unit being:\n
        • Within ER of every unit initially selected \n
        • Not within ER of an enemy not reselected \n
        • In Unit Coherency \n
         - \n
-        Or charge fails and unit doesn't move
+        Or charge fails and unit doesn\'t move
     </string>
     <string name="goto_fight_button_text">FIGHT</string>
 
@@ -209,5 +212,5 @@
         - \n
         Alternately, unit can consolidate towards objective marker, if it will end up in range
     </string>
-    <string name="goto_start_button_text">Return To Start Of Battleflow</string>
+    <string name="goto_start_button_text">Return to start of Battleflow</string>
 </resources>

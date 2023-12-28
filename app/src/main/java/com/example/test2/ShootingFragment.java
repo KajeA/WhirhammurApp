@@ -1,6 +1,7 @@
 package com.example.test2;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +18,7 @@ public class ShootingFragment extends Fragment {
 
     @Override
     public View onCreateView(
-            LayoutInflater inflater, ViewGroup container,
+            @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
 
@@ -29,21 +30,25 @@ public class ShootingFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.goto_attack_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        View attackButton = view.findViewById(R.id.goto_attack_button);
+        if (attackButton != null) {
+            attackButton.setOnClickListener(v -> {
                 NavHostFragment.findNavController(ShootingFragment.this)
                         .navigate(R.id.action_ShootingFragment_to_AttackFragment2);
-            }
-        });
+            });
+        } else {
+            Log.e("ShootingFragment", "Attack button not found in the layout");
+        }
 
-        view.findViewById(R.id.goto_charge_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        View chargeButton = view.findViewById(R.id.goto_charge_button);
+        if (chargeButton != null) {
+            chargeButton.setOnClickListener(v -> {
                 NavHostFragment.findNavController(ShootingFragment.this)
-                        .navigate(R.id.action_ShootingFragment_to_chargeFragment);
-            }
-        });
+                        .navigate(R.id.action_ShootingFragment_to_ChargeFragment);
+            });
+        } else {
+            Log.e("ShootingFragment", "Charge button not found in the layout");
+        }
     }
 
     @Override

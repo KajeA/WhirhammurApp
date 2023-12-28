@@ -33,7 +33,15 @@ public class FightFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(FightFragment.this)
-                        .navigate(R.id.action_ChargeFragment_to_FightFragment);
+                        .navigate(R.id.action_FightFragment_to_AttackFragment);
+            }
+        });
+
+        view.findViewById(R.id.goto_start_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(FightFragment.this)
+                        .navigate(R.id.action_FightFragment_to_StartFragment2);
             }
         });
     }

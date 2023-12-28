@@ -4,7 +4,19 @@
     tools:context="com.example.test2.MainActivity">
     <item
         android:id="@+id/action_settings"
-        android:orderInCategory="100"
+        android:orderInCategory="300"
         android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_escape"
+        android:orderInCategory="100"
+        android:title="@string/action_escape"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_erange"
+        android:orderInCategory="200"
+        android:title="@string/action_erange"
         app:showAsAction="never" />
 </menu>

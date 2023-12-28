@@ -8,4 +8,5 @@
     <item name="action_MovementFragment_to_ReinforcementsFragment" type="id" />
     <item name="action_MovementFragment_to_ShootingFragment" type="id" />
     <item name="action_ShootingFragment_to_AttackFragment" type="id" />
+    <item name="action_FightFragment_to_StartFragment" type="id" />
 </resources>

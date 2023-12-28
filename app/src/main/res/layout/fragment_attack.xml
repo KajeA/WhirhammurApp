@@ -141,7 +141,7 @@
             android:background="@color/colorPrimaryDark"
             android:fontFamily="@font/belleza"
             android:text="@string/wounds_message_output"
-            android:textColor="@android:color/red"
+            android:textColor="@color/red"
             android:textSize="18sp"
             android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
@@ -232,6 +232,7 @@
             android:textSize="18sp"
             android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.033"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/d3" />
 

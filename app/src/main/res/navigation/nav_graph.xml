@@ -30,8 +30,8 @@
     <fragment
         android:id="@+id/MovementFragment"
         android:name="com.example.test2.MovementFragment"
-        android:label="fragment_movement"
-        tools:layout="@layout/fragment_movement" >
+        android:label="@string/movement_fragment_label"
+        tools:layout="@layout/fragment_movement">
         <action
             android:id="@+id/action_MovementFragment_to_ShootingFragment2"
             app:destination="@id/ShootingFragment" />
@@ -39,25 +39,25 @@
     <fragment
         android:id="@+id/ShootingFragment"
         android:name="com.example.test2.ShootingFragment"
-        android:label="fragment_shooting"
-        tools:layout="@layout/fragment_shooting" >
+        android:label="@string/shooting_fragment_label"
+        tools:layout="@layout/fragment_shooting">
         <action
             android:id="@+id/action_ShootingFragment_to_AttackFragment2"
             app:destination="@id/AttackFragment" />
         <action
-            android:id="@+id/action_ShootingFragment_to_chargeFragment"
+            android:id="@+id/action_ShootingFragment_to_ChargeFragment"
             app:destination="@id/ChargeFragment" />
     </fragment>
     <fragment
         android:id="@+id/AttackFragment"
         android:name="com.example.test2.AttackFragment"
-        android:label="fragment_attack"
+        android:label="@string/attack_fragment_label"
         tools:layout="@layout/fragment_attack" />
     <fragment
         android:id="@+id/ChargeFragment"
         android:name="com.example.test2.ChargeFragment"
-        android:label="fragment_charge"
-        tools:layout="@layout/fragment_charge" >
+        android:label="@string/charge_fragment_label"
+        tools:layout="@layout/fragment_charge">
         <action
             android:id="@+id/action_ChargeFragment_to_FightFragment"
             app:destination="@id/FightFragment" />
@@ -65,10 +65,13 @@
     <fragment
         android:id="@+id/FightFragment"
         android:name="com.example.test2.FightFragment"
-        android:label="fragment_fight"
-        tools:layout="@layout/fragment_fight" >
+        android:label="@string/fight_fragment_label"
+        tools:layout="@layout/fragment_fight">
         <action
             android:id="@+id/action_FightFragment_to_AttackFragment"
             app:destination="@id/AttackFragment" />
+        <action
+            android:id="@+id/action_FightFragment_to_StartFragment2"
+            app:destination="@id/StartFragment" />
     </fragment>
 </navigation>
