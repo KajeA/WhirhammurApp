@@ -41,7 +41,7 @@ public class StartFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(StartFragment.this)
-                        .navigate(R.id.action_StartFragment_to_MovementFragment);
+                        .navigate(R.id.action_StartFragment_to_MovementFragment3);
             }
         });
     }

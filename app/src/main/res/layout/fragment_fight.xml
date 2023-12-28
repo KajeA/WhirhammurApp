@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/mainBackground"
-    tools:context=".MovementFragment">
+    tools:context=".FightFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,164 +14,146 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/title_movement"
+            android:id="@+id/title_fight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
-            android:layout_marginTop="34dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="1dp"
             android:background="@color/colorPrimaryDark"
-            android:fontFamily="@font/halant_bold"
-            android:text="@string/title_movement"
+            android:text="@string/title_fight"
             android:textColor="@color/titleText"
             android:textSize="34sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/note_fight0"
+            android:layout_width="370dp"
+            android:layout_height="117dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/note_background"
+            android:lineSpacingExtra="10sp"
+            android:padding="5dp"
+            android:text="@string/note_fight0"
+            android:textAlignment="center"
+            android:textColor="@color/noteText"
+            android:textSize="14sp"
+            android:textStyle="italic"
             android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/details_movement"
+            android:id="@+id/details_fight0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="1dp"
             android:background="@color/colorPrimaryDark"
-            android:fontFamily="@font/halant"
-            android:text="@string/details_movement"
+            android:fontFamily="@font/halant_bold"
+            android:text="@string/details_fight0"
             android:textAlignment="center"
-            android:textColor="@color/detailText"
-            android:textSize="18sp"
+            android:textColor="@color/subtitleText"
+            android:textSize="22sp"
+            android:textStyle="normal"
             android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/note_fight0" />
 
         <ImageView
             android:id="@+id/d1"
             android:layout_width="300dp"
             android:layout_height="1dp"
             android:layout_marginStart="1dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="1dp"
             android:background="@color/divider"
             android:src="@android:drawable/divider_horizontal_bright"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/details_movement" />
+            app:layout_constraintTop_toBottomOf="@+id/details_fight0" />
 
         <TextView
-            android:id="@+id/title_fallback"
+            android:id="@+id/subtitle_fight1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="1dp"
-            android:layout_marginBottom="23dp"
             android:background="@color/colorPrimaryDark"
             android:fontFamily="@font/halant_bold"
-            android:text="@string/title_fallback"
+            android:text="@string/subtitle_fight1"
             android:textColor="@color/subtitleText"
-            android:textSize="22sp"
+            android:textSize="24sp"
             android:typeface="serif"
-            app:layout_constraintBottom_toTopOf="@+id/details_fallback"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/d1" />
 
         <TextView
-            android:id="@+id/details_fallback"
+            android:id="@+id/details_fight1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="1dp"
             android:background="@color/colorPrimaryDark"
             android:fontFamily="@font/halant"
-            android:text="@string/details_fallback"
+            android:text="@string/details_fight1"
             android:textAlignment="center"
             android:textColor="@color/detailText"
             android:textSize="18sp"
             android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title_fallback" />
+            app:layout_constraintTop_toBottomOf="@id/subtitle_fight1" />
 
         <ImageView
             android:id="@+id/d2"
             android:layout_width="300dp"
             android:layout_height="1dp"
             android:layout_marginStart="1dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="1dp"
             android:background="@color/divider"
             android:src="@android:drawable/divider_horizontal_bright"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/details_fallback" />
+            app:layout_constraintTop_toBottomOf="@+id/details_fight1" />
 
         <TextView
-            android:id="@+id/details_terrain"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="5dp"
-            android:background="@drawable/note_background"
-            android:fontFamily="@font/halant"
-            android:padding="5dp"
-            android:text="@string/details_terrain"
-            android:textAlignment="center"
-            android:textColor="@color/noteText"
-            android:textSize="14sp"
-            android:textStyle="italic"
-            android:typeface="serif"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/d2" />
-
-        <TextView
-            android:id="@+id/details_flying"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="5dp"
-            android:background="@drawable/note_background"
-            android:fontFamily="@font/halant"
-            android:text="@string/details_flying"
-            android:textAlignment="center"
-            android:textColor="@color/noteText"
-            android:textSize="14sp"
-            android:textStyle="italic"
-            android:typeface="serif"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/details_terrain" />
-
-        <TextView
-            android:id="@+id/note_reinforcements"
+            android:id="@+id/details_fight2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="1dp"
             android:background="@color/colorPrimaryDark"
-            android:fontFamily="@font/halant_bold"
-            android:text="@string/note_reinforcements"
+            android:fontFamily="@font/halant"
+            android:text="@string/details_fight2"
             android:textAlignment="center"
-            android:textColor="@color/subtitleText"
-            android:textSize="22sp"
+            android:textColor="@color/detailText"
+            android:textSize="18sp"
             android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.812"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/details_flying" />
+            app:layout_constraintTop_toBottomOf="@+id/d2" />
 
         <Button
-            android:id="@+id/goto_shooting_button"
+            android:id="@+id/goto_attack_button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
@@ -179,11 +161,57 @@
             android:layout_marginEnd="1dp"
             android:backgroundTint="@color/buttonBackground"
             android:fontFamily="@font/belleza"
-            android:text="@string/goto_shooting_button_text"
+            android:text="@string/goto_attack_button_text2"
             android:textColor="@color/buttonText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/note_reinforcements" />
+            app:layout_constraintTop_toBottomOf="@+id/details_fight2" />
+
+        <ImageView
+            android:id="@+id/d3"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="1dp"
+            android:background="@color/divider"
+            android:src="@android:drawable/divider_horizontal_bright"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/goto_attack_button2" />
+
+        <TextView
+            android:id="@+id/details_fight3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/halant"
+            android:text="@string/details_fight3"
+            android:textAlignment="center"
+            android:textColor="@color/detailText"
+            android:textSize="18sp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/d3" />
+
+        <Button
+            android:id="@+id/goto_start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="1dp"
+            android:backgroundTint="@color/buttonBackground"
+            android:fontFamily="@font/belleza"
+            android:text="@string/goto_start_button_text"
+            android:textColor="@color/buttonText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_fight3" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

@@ -2,6 +2,31 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorPrimaryDark">#301934</color>
-    <color name="screenBackground">#0CC867</color>
+    <color name="red">#811E1E</color>
+    <!-- Background -->
+    <color name="mainBackground">#000000</color>
+    <color name="screenBackground">#000000</color>
+
+    <!-- Buttons -->
+    <color name="buttonBackground">#5A1818</color>
+    <color name="buttonText">#F6F2F2</color>
+
+    <!-- Text Box Backgrounds-->
+    <color name="colorPrimaryDark">#000000</color>
+
+    <!-- Divider -->
+    <color name="divider">#4D999696</color>
+
+    <!-- Text -->
+    <color name="titleText">#DBB06E</color>
+    <color name="detailText">#ACA755</color>
+    <color name="subtitleText">#71634C</color>
+
+    <!-- Notes -->
+    <color name="noteBackground">#34967D6A</color>
+    <color name="noteText">#D5C3B78A</color>
+
+    <!-- Faction Notes -->
+    <color name="factionBackground">#65E0E4</color>
+    <color name="factionText">#000000</color>
 </resources>
